@@ -25,6 +25,10 @@
             <% if alerted = alert %>
                 <p id="alert"><%= alerted %></p>
             <% end %>
+            
+            <h1> <%= ENV['RUBY_HEAP_MIN_SLOTS'] %></h1>
+            
+            
             <%= yield %>
         </div>
 		<div id="foot">
